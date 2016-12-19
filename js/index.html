@@ -71,5 +71,12 @@
   <script>(function($){$(function(){$('.button-collapse').sideNav()})})(jQuery);</script>
   <script src="https://raw.githubusercontent.com/AlloyTeam/AlloyLever/gh-pages/alloy_lever.min.js"></script>
 
+<script>
+function apiStatus(data) {
+  console.log(data.status);
+}
+</script>
+<script src="https://status.github.com/api/status.json?callback=apiStatus"></script>
+
   </body>
 </html>
