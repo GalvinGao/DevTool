@@ -1,8 +1,20 @@
 <html>
 <head>
-  <script src=""></script>
+  <script refer="refer" src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
+<!--  http://z.galvingao.xyz/yourls-api.php?signature=90933b8db5&action=shorturl&url=http://www.baidu.com&format=jsonp  -->
 
+<script>
+function shorten(url){
+geturl = "http://z.galvingao.xyz/yourls-api.php?signature=90933b8db5&action=shorturl&format=json&url=" + url;
+$.getJSON( geturl, function(data){ console.log(data.shorturl); console.log(data.title); });
+}
+</script>
+
+<span id="233"></span>
+
+<button onclick="shorten('http://www.baidu.com/')">233</button>
+  <script src="https://raw.githubusercontent.com/AlloyTeam/AlloyLever/gh-pages/alloy_lever.min.js"></script>
 </body>
 </html>
